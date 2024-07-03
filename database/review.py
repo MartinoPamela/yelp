@@ -14,6 +14,7 @@ class Review:
     votes_cool: int
     review_text: str
 
+    # dato che ho una relazione uno a molti ho due alternative: o una stringa o un oggetto
     business_id: str
     business: Business
 
@@ -22,3 +23,5 @@ class Review:
 
     def __hash__(self):
         return hash(self.review_id)
+
+
